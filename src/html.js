@@ -42,7 +42,7 @@ const defaultView = function (array) {
     return `<div class="content">
             <button type="button" class="collapsible" id="bookmark-content" data-bookmark-id="${array.id}">
                 <div class="button-text" id="button-text">${array.title}</div>
-                <div class="etoiles">
+                <div class="rate">
                     ${displayRating}
                 </div>
             </button> </div>
@@ -57,7 +57,7 @@ const panelView = function (array) {
     return `<div class="content">
     <button type="button" class="collapsible" id="bookmark-content" data-bookmark-id="${array.id}">
         <div class="button-text" id="button-text">${array.title}</div>
-        <div class="etoiles">
+        <div class="rate">
             ${displayRating}
         </div>
     </button> </div>
@@ -77,24 +77,25 @@ function addBookmark() {
     <form class="form-add">
         <div class="url-input">
         <label for="url">Add new bookmark:</label>
-            <input type="text" name="url" id="enter-link" placeholder="enter URL here"required>
-        </div> <div class="inner-box">
+        <input type="text" name="url" id="enter-link" placeholder="enter URL here"required>
+        </div> 
+            <div class="inner-box">
                 <div class="name-input">
                 <label for="title">Enter title:</label>
                 <input type="text" name="title" id="enter-title" placeholder="Enter title here" required>
                 </div>
-                <div class="stars">
-                    <input class="star star-1" id="star-1" type="radio" name="rating" value="1" required />
-                    <label class="star star-1" for="star-1"></label>
-                    <input class="star star-2" id="star-2" type="radio" name="rating" value="2" required />
-                    <label class="star star-2" for="star-2"></label>
-                    <input class="star star-3" id="star-3" type="radio" name="rating" value="3" required />
-                    <label class="star star-3" for="star-3"></label>
-                    <input class="star star-4" id="star-4" type="radio" name="rating" value="4" required />
-                    <label class="star star-4" for="star-4"></label>
-                    <input class="star star-5" id="star-5" type="radio" name="rating" value="5" required />
-                    <label class="star star-5" for="star-5"></label>
-                </div>
+                    <div class="stars">
+                        <input class="star star-5" id="star-5" type="radio" name="rating" value="5" required />
+                        <label for="star-5" class="star star-5"></label> 
+                        <input class="star star-4" id="star-4" type="radio" name="rating" value="4" required />
+                        <label for="star-4" class="star star-4"></label>   
+                        <input class="star star-3" id="star-3" type="radio" name="rating" value="3" required />
+                        <label for="star-3" class="star star-3"></label>
+                        <input class="star star-2" id="star-2" type="radio" name="rating" value="2" required />
+                        <label for="star-2" class="star star-2"></label>                     
+                        <input class="star star-1" id="star-1" type="radio" name="rating" value="1" required />
+                        <label for="star-1" class="star star-1" tabindex="0"></label>
+                    </div>
                 <div class="description-area">
                     <p>Enter description:</p>
                     <textarea name="desc" id="input-description"></textarea>
@@ -104,7 +105,6 @@ function addBookmark() {
             <button class="cancel-button" default>Cancel</button>
             <button type="submit" class="submit-form">Submit</button>
             </div>
-        </label>
     </form>
 </div>`
 }

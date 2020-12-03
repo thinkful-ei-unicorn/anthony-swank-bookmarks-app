@@ -54,7 +54,9 @@ footer p {
 
 .main-display {
     margin: 40px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .collapsible, .list-empty{
@@ -90,15 +92,15 @@ footer p {
 
 .panel {
     background-color: black;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 100px;
-    width: 80%;
+}
+
+.drop-down-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 }
 
 .add-bookmark {
@@ -235,3 +237,6 @@ input#enter-link, #enter-title {
     margin-bottom: 10px;
 }
 
+fieldset {
+    border: none;
+}
