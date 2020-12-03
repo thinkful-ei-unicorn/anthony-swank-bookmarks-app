@@ -1,0 +1,237 @@
+body {
+    background-color: green;
+}
+
+header {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    font-family: cursive;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    padding-top: 40px;
+}
+
+footer p {
+    padding-top: 20px;
+}
+
+.error-area {
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-family: cursive;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.new-button, .filter {
+    background-color: white;
+    color: black;
+    font-family: cursive;
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.new-button :hover {
+    color: #C9ADA7;
+    background-color: #4a321d;
+}
+
+.main-display {
+    margin: 40px;
+
+}
+
+.collapsible, .list-empty{
+    margin-top: 30px;
+    width: 500px;
+    font-family: cursive;
+    font-size: 20px;
+    background: black;
+    color: #dadfe1;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    padding: 12px;
+} 
+
+.button-text {
+    flex: 4;
+}
+
+.rate {
+    flex: 1;
+}
+
+.checked {
+    color: orange;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.panel {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    width: 80%;
+}
+
+.add-bookmark {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.visit-site, .delete-button {
+    background: white;
+    color: black;
+    font-family: cursive;
+    border: none;
+    box-shadow: none;
+    font-size: 18px;
+    padding: 10px;
+    margin: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.cancel-button, .submit-form {
+    margin: 1%;
+    background-color: white;
+    color: black;
+    font-family: cursive;
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#drop-down-text {
+    color: white;
+    font-family: cursive;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div.stars {
+    width: 270px;
+    display: inline-block;
+}
+  
+input.star { 
+    display: none; 
+}
+  
+label.star {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: black;
+    transition: all .2s;
+  }
+  
+  input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: yellow;
+    transition: all .25s;
+}
+  
+input.star-5:checked ~ label.star:before {
+    color: yellow;
+    text-shadow: 0 0 20px #952;
+}
+  
+label.star:hover { 
+    transform: scale(1.5); 
+}
+  
+label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+}
+
+textarea {
+    width: 400px;
+    height: 100%;
+    resize: none;
+    color: black;
+    font-family: cursive;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.add-bookmark label, .form-add p {
+    font-size: 20px;    
+}
+
+p {
+    margin-top: 0;
+}
+
+.form-add {
+    font-family: cursive;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+input#enter-link, #enter-title {
+    background: white;
+    font-family: cursive;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+    height: 24px;
+}
+
+#enter-title {
+    width: 64%;
+}
+
+.form-buttons {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+#cancel-error {
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
