@@ -1,4 +1,4 @@
-https://thinkful-ei-unicorn.github.io/anthony-swank-bookmarks-app/
+https://thinkful-ei-unicorn.github.io/anthony-swank-bookmarks-app/dist/
 
 This is my bookmark App! Fulfilled all requirements and user stories and ready to go! This bookmark has a very basic design, with fully functional features that anyone can take advantage of.
 
