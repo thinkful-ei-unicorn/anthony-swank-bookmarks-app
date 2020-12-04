@@ -1,21 +1,15 @@
-Bookmarks App Project Objective: By the end of this checkpoint, you will have built a client-side Bookmarking application that utilizes a RESTful Web API on the backend.
+https://thinkful-ei-unicorn.github.io/anthony-swank-bookmarks-app/
 
-Project Overview Using everything you've learned over the Fundamentals section of the course, you will build the frontend for an API-powered Bookmarks application that lets the user store and rate their custom web bookmarks.
+This is my bookmark App! Fulfilled all requirements and user stories and ready to go! This bookmark has a very basic design, with fully functional features that anyone can take advantage of.
 
-Grading To receive a passing grade, the project must:
+My bookmark can add bookmarks to a list. The bookmark includes a space for a:
 
-Fulfill every non-extension user story below Fulfill every non-extension technical requirement below For successful submission, you MUST:
+-title -url link -description -rating (1-5)
 
-Push your final version to the gh-pages branch of your repo. Your repo should be inside the cohort's organization and named [yourname]-bookmarks-app. Add the live GH Pages link to the header of your repo. Create a README.md file that contains a full list of all user stories completed. Submit the repo URL at the bottom of this page. User Stories As a user:
+When you open the app, you can see all added bookmarks immediately in front. They show the title and rating only, but can be expanded to show the entire bookmark.
 
-I can add bookmarks to my bookmark list. Bookmarks contain:
+You can delete bookmarks from my list at any time.
 
-title url link description rating (1-5) I can see a list of my bookmarks when I first open the app
+Feedback is given when you aren't able to submit/add a bookmark to the list. (Missing requirements, etc.)
 
-All bookmarks in the list default to a "condensed" view showing only title and rating I can click on a bookmark to display the "detailed" view
-
-Detailed view expands to additionally display description and a "Visit Site" link I can remove bookmarks from my bookmark list
-
-I receive appropriate feedback when I cannot submit a bookmark
-
-Check all validations in the API documentation (e.g. title and url field required) I can select from a dropdown (a element) a "minimum rating" to filter the list by all bookmarks rated at or above the chosen selection (Extension feature - optional) I can edit the rating and description of a bookmark in my list Technical Requirements Use fetch for AJAX calls and jQuery for DOM manipulation Use namespacing to adhere to good architecture practices Minimal global variables Create modules in separate files to organize your code Logically group your functions (e.g. API methods, store methods...) Keep your Data out of the DOM No direct DOM manipulation in your event handlers! Follow the React-ful design pattern - change your state, re-render your component Use semantic HTML Use a responsive and mobile-first design Visually and functionally solid in viewports for mobile and desktop Follow a11y best practices Refer back to the accessibility checklist and the lesson on forms
+You can filter your bookmarks list by rating, hide unrated bookmarks, or show all bookmarks.
