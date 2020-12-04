@@ -2,15 +2,22 @@
   "name": "anthony-swank-bookmarks-app",
   "version": "1.0.0",
   "description": "Bookmarks App Project Objective: By the end of this checkpoint, you will have built a client-side Bookmarking application that utilizes a RESTful Web API on the backend.",
-  "main": "./src/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d dist"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thinkful-ei-unicorn/anthony-swank-bookmarks-app.git"
+  },
+  "keywords": [
+    "bookmarks"
+  ],
+  "author": "Anthony_Swank",
   "license": "ISC",
+  "homepage": "https://github.com/thinkful-ei-unicorn/anthony-swank-bookmarks-app#readme",
   "dependencies": {
     "cuid": "^2.1.8",
     "gh-pages": "^3.1.0",

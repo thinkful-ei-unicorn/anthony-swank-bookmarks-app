@@ -4,7 +4,10 @@ This is my bookmark App! Fulfilled all requirements and user stories and ready t
 
 My bookmark can add bookmarks to a list. The bookmark includes a space for a:
 
--title -url link -description -rating (1-5)
+-title 
+-url link 
+-description 
+-rating (1-5)
 
 When you open the app, you can see all added bookmarks immediately in front. They show the title and rating only, but can be expanded to show the entire bookmark.
 
