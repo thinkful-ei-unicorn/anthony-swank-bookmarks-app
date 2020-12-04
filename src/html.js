@@ -75,36 +75,37 @@ const panelView = function (array) {
 function addBookmark() {
     return `<div class="add-bookmark">
     <form class="form-add">
-        <div class="url-input">
+        <section class="url-input">
         <label for="url">Add new bookmark:</label>
         <input type="text" name="url" id="enter-link" placeholder="enter URL here"required>
-        </div> 
-            <div class="inner-box">
-                <div class="name-input">
+        </section> 
+            <article class="inner-box">
+                <section class="name-input">
                 <label for="title">Enter title:</label>
                 <input type="text" name="title" id="enter-title" placeholder="Enter title here" required>
-                </div>
-                    <div class="stars">
-                        <input class="star star-5" id="star-5" type="radio" name="rating" value="5" required />
-                        <label for="star-5" class="star star-5"></label> 
-                        <input class="star star-4" id="star-4" type="radio" name="rating" value="4" required />
-                        <label for="star-4" class="star star-4"></label>   
-                        <input class="star star-3" id="star-3" type="radio" name="rating" value="3" required />
-                        <label for="star-3" class="star star-3"></label>
-                        <input class="star star-2" id="star-2" type="radio" name="rating" value="2" required />
-                        <label for="star-2" class="star star-2"></label>                     
-                        <input class="star star-1" id="star-1" type="radio" name="rating" value="1" required />
-                        <label for="star-1" class="star star-1" tabindex="0"></label>
-                    </div>
-                <div class="description-area">
+                </section>
+                    <section class="ratings">
+                        <p class="ratings-title">Rating:</p>
+                        <input id="1" name="rating" type="radio" value="1" class="radio-btn hide">
+                        <label for="1">1</label>
+                        <input id="2" name="rating" type="radio" value="2" class="radio-btn hide">
+                        <label for="2">2</label>
+                        <input id="3" name="rating" type="radio" value="3" class="radio-btn hide">
+                        <label for="3">3</label>
+                        <input id="4" name="rating" type="radio" value="4" class="radio-btn hide">
+                        <label for="4">4</label>
+                        <input id="5" name="rating" type="radio" value="5" class="radio-btn hide">
+                        <label for="5">5</label>
+                    </section>
+                <section class="description-area">
                     <p>Enter description:</p>
                     <textarea name="desc" id="input-description"></textarea>
-                </div>
-            </div>
-            <div class="form-buttons">
+                </section>
+            </article>
+            <section class="form-buttons">
             <button class="cancel-button" default>Cancel</button>
             <button type="submit" class="submit-form">Submit</button>
-            </div>
+            </section>
     </form>
 </div>`
 }
