@@ -2,7 +2,7 @@
   "name": "anthony-swank-bookmarks-app",
   "version": "1.0.0",
   "description": "Bookmarks App Project Objective: By the end of this checkpoint, you will have built a client-side Bookmarking application that utilizes a RESTful Web API on the backend.",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --mode production",
