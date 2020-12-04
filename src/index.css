@@ -48,8 +48,8 @@ footer p {
 }
 
 .new-button :hover {
-    color: #C9ADA7;
-    background-color: #4a321d;
+    color: white;
+    background-color: black;
 }
 
 .main-display {
@@ -105,10 +105,10 @@ footer p {
 
 .add-bookmark {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
 }
 
 
@@ -146,18 +146,8 @@ footer p {
     margin-right: 20px;
 }
 
-.ratings {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.ratings-title {
-    padding-right: 20px;
-}
-
 textarea {
-    width: 400px;
+    width: 300px;
     height: 100%;
     resize: none;
     color: black;
@@ -181,10 +171,10 @@ p {
     border-color: black;
     border-width: 5px;
     border-radius: 15px;
-    padding: 40px;
+    padding: 10px;
 }
 
-input#enter-link, #enter-title {
+input#enter-link, input#enter-title {
     background: white;
     font-family: cursive;
     border: none;
@@ -192,10 +182,6 @@ input#enter-link, #enter-title {
     padding: 5px;
     margin: 10px;
     height: 24px;
-}
-
-#enter-title {
-    width: 64%;
 }
 
 .form-buttons {
@@ -212,4 +198,54 @@ input#enter-link, #enter-title {
 
 fieldset {
     border: none;
+}
+
+.name-input, .url-input, .description-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.ratings-title {
+    padding-right: 20px;
+    margin: 0;
+}
+
+@media all and (min-width:800px) {
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .add-bookmark {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .name-input, .url-input, .description-area {
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .ratings {
+        justify-content: left;
+    }
+
+    .ratings-title, .description-area p, .url-input label, .name-input label {
+        padding-right: 20px;
+        margin: 0;
+    }
+
+    .form-add {
+        padding: 20px;
+    }
 }

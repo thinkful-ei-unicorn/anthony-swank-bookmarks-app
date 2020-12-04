@@ -99,7 +99,7 @@ function addBookmark() {
                     </section>
                 <section class="description-area">
                     <p>Enter description:</p>
-                    <textarea name="desc" id="input-description"></textarea>
+                    <textarea name="desc" id="input-description" placeholder="Enter description here"></textarea>
                 </section>
             </article>
             <section class="form-buttons">
